@@ -15,4 +15,6 @@ console.table([name,age, isLoggedIn])
 // undefined => not define a value means variable is declared but does not assigned any value to it.
 // symbol => when we are talking about unique value
 // object
+// null => its type of object (interview question)
+// undefined => its type is undefined
 console.log(age, typeof(age))
