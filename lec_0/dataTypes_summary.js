@@ -22,13 +22,43 @@ console.log(id===userId)
 // array
 const arr = ["Adam", "Mike" , "Sara" , "Neha"]
 // objects
-let obj = info{
-    name : "helina",
-    age : 23,
-}
+let obj = {
+    name: "helina",
+    age: 23
+};
 // function
 
 let func = function (){
     console.log("hello world!")
 }
+
+// ######################################
+// there are two types of memory
+// 1. stack (for primitive datatypes)
+
+// when we are using the stack memory and declare a variable its means we are getting its copy.
+
+// 2. heap  (for non primitive datatypes)
+
+// when we are using the heap memory and declare a variable its means we are getting its reference. Change will occure in original variable
+
+// stack memory example
+let myName = "Adam"
+let myNewName = myName
+
+console.log(myName)
+console.log(myNewName)
+
+// heap memory example
+let userOne = {
+    name:"Mike",
+    email:"email@gmail.com"
+};
+
+let userTwo = userOne 
+userTwo.email = "iAm@gmail.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)
+
 
