@@ -12,5 +12,15 @@ console.log(`Hello ${f_name.toUpperCase()} ${s_name} to our program`)
 
 // string declaration in new way
 
-const myName = new String("Mike")
+const myName = new String("Mike") //string declaration method in object type.
 console.log(myName)
+
+// finding the string length
+console.log(myName.length)
+console.log(myName.toUpperCase())
+
+// finding the value at specific index
+console.log(myName.charAt(3))
+console.log(myName.indexOf("M"))
+
+
