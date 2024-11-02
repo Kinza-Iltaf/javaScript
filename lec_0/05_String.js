@@ -22,5 +22,8 @@ console.log(myName.toUpperCase())
 // finding the value at specific index
 console.log(myName.charAt(3))
 console.log(myName.indexOf("M"))
+// breaking string into parts or sanitaization:
+const designation = myName.substring(0,3);
+console.log(designation)
 
 
