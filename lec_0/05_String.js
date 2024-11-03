@@ -36,4 +36,15 @@ const myURL = "https://google%20my.com"
 console.log(myURL)
 console.log(myURL.replace("%20","-"))
 
+// checking something in string
+console.log(myURL.includes("google")) //output: true 
+console.log(myURL.includes("microsoft")) //not exist so output will be false
+
+//conversion of some data types into array base of some condition like if we have a sentence or a variable name having dashes(-) so every part should be treated as array element.
+
+// for this we need a split method and arguments 1. seperator and 2. limit
+const ourArray = "Hello! We are learning about methods in java script"
+console.log(ourArray.split(" "))
+
+
 
