@@ -46,5 +46,12 @@ console.log(myURL.includes("microsoft")) //not exist so output will be false
 const ourArray = "Hello! We are learning about methods in java script"
 console.log(ourArray.split(" "))
 
+//string concatenation:
+
+const greeting1 = "Hello!"
+const greeting2 = "Welcome"
+const greeting3 = "To My profile."
+console.log(greeting1.concat(" ",greeting2 , " ", greeting3))
+
 
 
