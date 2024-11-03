@@ -31,5 +31,9 @@ console.log(designation)
 const newName = "  Adam "
 console.log(newName)
 console.log(newName.trim())
+// replace method
+const myURL = "https://google%20my.com"
+console.log(myURL)
+console.log(myURL.replace("%20","-"))
 
 
