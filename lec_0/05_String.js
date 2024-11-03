@@ -26,4 +26,10 @@ console.log(myName.indexOf("M"))
 const designation = myName.substring(0,3);
 console.log(designation)
 
+// trim method : it is used to remove all the extra spaces and line terminator.
+// we also have the trim start method to remove the spaces from start and trim end to remove spaces from end. 
+const newName = "  Adam "
+console.log(newName)
+console.log(newName.trim())
+
 
