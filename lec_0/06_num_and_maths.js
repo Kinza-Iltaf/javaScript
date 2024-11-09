@@ -9,3 +9,7 @@ const price = 234.6342
 console.log(price.toFixed(2)) // round off the values after point
 console.log(price.toPrecision(4)) //focus on digit before the point
 
+const population = 1209080000;
+console.log(population.toLocaleString("en-PK"));  //to easily read a huge number by putting commas between them
+
+
