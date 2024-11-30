@@ -1,7 +1,33 @@
-const myDate = new Date(2004, 2, 1 , 7 , 6);
+let myDate = new Date();
 // console.log(myDate);
+//conversion to string
+// console.log(myDate.toString())
 
-//conversion into string
-console.log(myDate.toDateString());
+// console.log(myDate.toLocaleString())
+
+// console.log(myDate.toDateString());
+
+// console.log(myDate.tOJSON());
+
+//creation of specific date
+//date are starting from 0=january
+//date is an object type of variable
+let myCreatedDate = new Date("2023,2,29");
+// console.log(myCreatedDate.toDateString())
+
+//exact now timing 
+
+let presentDate =   new Date;
+// console.log(presentDate.getTime());
+// console.log(Math.ceil(Date.now()/1000));
+
+
+
+
+
+
+
+
+
 
 
