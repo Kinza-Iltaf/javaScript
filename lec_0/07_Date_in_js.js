@@ -21,6 +21,12 @@ let presentDate =   new Date;
 // console.log(presentDate.getTime());
 // console.log(Math.ceil(Date.now()/1000));
 
+let newDate = new Date;
+console.log(newDate.getDay());
+console.log(newDate.getFullYear());
+console.log(newDate.getHours());
+
+
 
 
 
