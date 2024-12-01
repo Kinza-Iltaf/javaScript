@@ -10,4 +10,5 @@ const oddNum = [ 1,3,5,7];
 //contactination
 
 const newArr = evenNum.concat(oddNum);
-console.log(newArr);
+console.log(newArr);.
+
