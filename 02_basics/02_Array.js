@@ -21,3 +21,18 @@ const new_method = [2, [4, 5 , 34,6,2], 3 , 5, [45, 34, [35, 25,6]]];
 const flat_arr = new_method.flat(1);
 console.log(flat_arr);
 
+//in web scraping when we want to get the data in form of array
+console.log(Array.isArray("Adam"));
+console.log(Array.from("Adam"));
+
+//through from if we want to give the key value pair then it will return the empty array becuase in this case we have to define specifically
+console.log(Array.from({name:"Adam"}));
+
+//converting different variable into array
+
+let score1 = 100;
+let score2 = 200;
+let score3 = 300;
+
+console.log(Array.of(score1,score2,score3));
+
