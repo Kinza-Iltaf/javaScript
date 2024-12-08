@@ -15,8 +15,29 @@
     last_login_days: ["sunday","saturday"]
  }
 
- console.log(js_user.name);
- console.log(js_user["name"]);
- console.log(js_user["full name"]);
- console.log(typeof(js_user[sym]));
+//  console.log(js_user.name);
+//  console.log(js_user["name"]);
+//  console.log(js_user["full name"]);
+//  console.log(js_user[sym]);
 
+ //changing the value of key of the object
+
+ js_user["full name"] = "Maham";
+//  console.log (js_user["full name"]);
+
+ //if we want to no one can modify the value then we can lock the value by freeze method
+
+//  Object.freeze(js_user);
+
+ js_user.age = 324;
+//  console.log(js_user);
+
+js_user.Greetings = function(){
+    console.log(`Hello JS user!, ${this["full name"]}`); //( ` -> backtack ) string interpolation.
+}
+
+js_user.GreetingsTwo = function(){
+    console.log("Hello JS users Two!");
+}
+
+console.log(js_user.Greetings());
