@@ -50,18 +50,18 @@ const full_details = {...user,...user_info};
 // first object is target where all the rest of the objects will be stored.
 // console.log(full_details);
 
-const database =[ {
+const database =[ 
     {
         id :1,
         name: "john"
     },
     {
         id :2,
-        name: "john"
+        name: "mohn"
     },
     {
         id :3,
-        name: "john"
+        name: "fohn"
     }
-}]
-console.log(database[1].name);
+]
+console.log(database[0].name);
