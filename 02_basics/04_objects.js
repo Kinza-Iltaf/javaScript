@@ -65,3 +65,9 @@ const database =[
     }
 ]
 console.log(database[0].name);
+console.log(Object.keys(user));
+console.log(Object.values(user));
+console.log(Object.entries(user)); //key and value is treated as array
+console.log(user.hasOwnProperty('gmail'));//check the key exist or not to avoid the crashing
+
+
