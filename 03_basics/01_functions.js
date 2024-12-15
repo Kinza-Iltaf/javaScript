@@ -20,4 +20,14 @@ function addition2(num1 ,num2) // num1 and num2 are parameters
 var add = addition2(1,5);
 // console.log (add);
 
+function loginInfo(userName = "smith") //smith is default value so if the user does not entered any value the smith will be used by default
+{
+    if(!userName){
+        console.log("user name is not entered!")
+        return
+    }
+    return `${userName} just loggedIn`;
+}
 
+var loggedinuser = loginInfo("Adam");
+console.log(loggedinuser);
