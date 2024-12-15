@@ -70,4 +70,16 @@ console.log(Object.values(user));
 console.log(Object.entries(user)); //key and value is treated as array
 console.log(user.hasOwnProperty('gmail'));//check the key exist or not to avoid the crashing
 
+//objects destructuring
+const course = {
+    courseName : " js course",
+    price : " 2399",
+    courseInstructor : "Johm smith"
+
+}
+ //accessing again and again through dot operator make the code a bit complex so we destructure the object
+
+ const {courseInstructor:ins} = course;
+ console.log(ins);//define shortest name
+
 
