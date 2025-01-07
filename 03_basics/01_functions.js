@@ -31,6 +31,8 @@ function loginInfo(userName = "smith") //smith is default value so if the user d
 
 var loggedinuser = loginInfo("Adam");
 // console.log(loggedinuser);
+
+
 //when we don't know about the number of parameters in function(use rest operator...)
 function cal_cart_price (...num){
     return num;
@@ -39,10 +41,10 @@ function cal_cart_price (...num){
 
 
 // object passing to the function
-var myobj = {
-    name: " Adam",
-    price: 120,
-}
+// var myobj = {
+//     name: " Adam",
+//     price: 120,
+// }
 function obj_calling(anyobject){
     console.log(`username is ${anyobject.name} and the price is ${anyobject.price}`);
 }
