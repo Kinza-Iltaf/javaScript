@@ -23,7 +23,7 @@ function add(){
     let num1 = 2
     function display(){
         let num2 = 3
-        console.log(num1)
+        //console.log(num1)
     }
 
     // console.log(num2)
@@ -37,10 +37,26 @@ if(true){
     if(firstName === " john")
     {
         const secondName = " Abraham"
-        console.log( firstName + secondName)
+        //console.log( firstName + secondName)
     }
 
     // console.log(secondName) throw error becuase it is outside of the scope
 }
 
 //console.log(firstName) //throw error becasuse it is outside of the scope
+
+//hoisting concept 
+
+console.log(addOne(6))
+function addOne(num)
+{
+    return num+1
+}
+
+
+console.log(addTwo(5))
+const addTwo = function(num)
+{
+
+    return num+2
+}
