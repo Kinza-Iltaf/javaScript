@@ -31,3 +31,16 @@ function add(){
 }
 
 add()
+
+if(true){
+    const firstName = " john"
+    if(firstName === " john")
+    {
+        const secondName = " Abraham"
+        console.log( firstName + secondName)
+    }
+
+    // console.log(secondName) throw error becuase it is outside of the scope
+}
+
+//console.log(firstName) //throw error becasuse it is outside of the scope
