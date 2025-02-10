@@ -2,7 +2,7 @@
 const accountId = 1234;
 var balance = 2352525;
 let accountTitle = "Adam";
-branch = "New York";
+branch = "New York"; 
 
 // printing on console
 console.log(accountTitle);
@@ -20,5 +20,14 @@ console.log(accountId);
 
 
 console.table([accountId,balance, accountTitle, branch])
+
+
+//summary
+//datatypes
+//1.const 2.var 3.let
+//var has no scope
+//when we declare a variable but not initialized it, it value is undefined.
+//printing multiple variable values
+//console.table([variables names])
 
 
