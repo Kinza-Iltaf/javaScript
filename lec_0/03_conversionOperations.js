@@ -27,3 +27,5 @@ console.log("2"+3+3)  // treat as string
 //conversion=> new variable = typename(caps)(varName).....let score = Number(grade)
 // "" =>false
 //"name" =>true
+//first string then rest will consider as string("2"+3+3) output: 233
+//firt number then rest numberconsole.log(2+3+"3")output : 53
