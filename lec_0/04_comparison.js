@@ -19,3 +19,9 @@ console.log(null>=7)
 // strict conversion
 // now at time of converstion the datatype would also be checked if not same error would occure.
 console.log("2"===2)
+//summary
+//same datatype variable comparison
+//different datatype (int and string)
+//numbers with null
+//numbers with undefined
+//strict equality check === datatype + number
