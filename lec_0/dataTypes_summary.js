@@ -68,4 +68,12 @@ console.log(userTwo.email)
 
 //datatype of non_primitive (object)
 
+//two types of memory
+
+//stack (copy : changes does not occures in original values)
+
+//heap (reference : changes occures in original values)
+
+
+
 
