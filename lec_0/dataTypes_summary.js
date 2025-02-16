@@ -62,3 +62,10 @@ console.log(userOne.email)
 console.log(userTwo.email)
 
 
+//summary
+//two datatypes (on the basis of storing and retriving)
+// 1.premitive(7 1.string  2.number  3.boolean  4.BigInt  5.Null  6.undefined  7.symbol)  2. non_primitive (reference type)(3  1.Arrays  2.Objects  3.Functions)
+
+//datatype of non_primitive (object)
+
+
