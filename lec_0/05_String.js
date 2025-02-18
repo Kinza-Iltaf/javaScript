@@ -55,3 +55,22 @@ console.log(greeting1.concat(" ",greeting2 , " ", greeting3))
 
 
 
+
+//summary of the chapter
+
+//Strings
+
+//concatenation (+) outdated
+
+//new way
+
+//string interpolation (backticks)
+
+//    `hello ${name.toupper}`  run time functions can be applied like to upper etc
+
+//string declaration as object
+
+// const = new String ("name")  its has now index and a lot of methods
+
+
+
