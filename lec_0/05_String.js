@@ -72,5 +72,21 @@ console.log(greeting1.concat(" ",greeting2 , " ", greeting3))
 
 // const = new String ("name")  its has now index and a lot of methods
 
+//now its just like an object like we can access the values through key like "name[0]" now if we have in name john then it will return j
+
+
+//some methods
+//length
+//charAt
+//indexOf
+//subString
+//Slice
+//Split
+//includes
+//replace
+//toUpperCase
+//toLowerCase
+//trim
+
 
 
