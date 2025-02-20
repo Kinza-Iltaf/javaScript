@@ -1,10 +1,13 @@
 let myDate = new Date();
 // console.log(myDate);
 //conversion to string
+
+//now its a bit in readable format like web/feb
 // console.log(myDate.toString())
 
 // console.log(myDate.toLocaleString())
 
+//good and readable
 // console.log(myDate.toDateString());
 
 // console.log(myDate.tOJSON());
@@ -30,7 +33,12 @@ console.log(newDate.getHours());
 
 
 
-
+// date is object
+//to second divide by 1000
+//to get present instance .now()
+//of specific date getTime()
+//to get day or month from date use .get(name)
+//in localestring we can customize the date by passing parameters to it
 
 
 
