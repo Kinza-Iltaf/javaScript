@@ -48,5 +48,12 @@ console.log(Array.of(score1,score2,score3));
 //but here is a problem when we have more than two arrays so that's why we use spread operator => ...arrayName
 
 //flat(depth) method => to flat the nested array
-//
+
+//to convert something to array Array.from(name of array)
+
+//for multiple values we use Array.of(all_var)
+
+//To check Variable is array or not isArray(name)
+
+
 
