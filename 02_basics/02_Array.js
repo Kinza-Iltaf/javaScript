@@ -36,3 +36,17 @@ let score3 = 300;
 
 console.log(Array.of(score1,score2,score3));
 
+
+
+// **********************///
+//combining two arrays
+
+//if we use push then it will take another element as a single element
+
+//so we can we "concate" method
+
+//but here is a problem when we have more than two arrays so that's why we use spread operator => ...arrayName
+
+//flat(depth) method => to flat the nested array
+//
+
