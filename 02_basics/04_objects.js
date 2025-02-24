@@ -114,6 +114,23 @@ const course = {
 
  //object_name.hasOwnProperty(property(name))
 
+ //destructuring
+
+ //when we want to access the object element then we have to write again and again obj_name with dot operator and then element name => lengthy process
+
+ //short cut => type  { what want to access} = fromwhere want to access (obj_name)
  
+ //const {name} = user;
+ //want to more short it : {name:n}
+ //now => console.log(n) //simple dimple
+
+ //API => when other party perform some task for us => like login through google => its totally outside of our website
+
+
+ // the response from API can be in object format, array etc 
+
+ //API data is same as object but is does not have any name 
+
+ //{"name" : "John"}
 
 
