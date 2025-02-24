@@ -30,8 +30,14 @@ const user = {
 
 // console.log(user.user_name.full_name.last_name)
 
-// const full_details = {user_info,user};
-//combining two objects
+ 
+
+//  
+
+
+ 
+
+// combining two objects
 
 // const obj1 ={
 //     1: "a",
@@ -64,11 +70,12 @@ const database =[
         name: "fohn"
     }
 ]
-console.log(database[0].name);
-console.log(Object.keys(user));
-console.log(Object.values(user));
+// console.log(database[0].name);
+// console.log(Object.keys(user));
+// console.log(Object.values(user));
 console.log(Object.entries(user)); //key and value is treated as array
-console.log(user.hasOwnProperty('gmail'));//check the key exist or not to avoid the crashing
+// console.log(user.hasOwnProperty('gmail'));
+//check the key exist or not to avoid the crashing
 
 //objects destructuring
 const course = {
@@ -80,6 +87,33 @@ const course = {
  //accessing again and again through dot operator make the code a bit complex so we destructure the object
 
  const {courseInstructor:ins} = course;
- console.log(ins);//define shortest name
+//  console.log(ins);
+ //define shortest name
+
+
+
+
+ //************************/
+ //Object Part 2 summary
+
+ //combining two or more objects
+ //object.assign(target_objec(empty), obj1,obj2 (all existing which we want to combine))
+
+ //for combination ... can use spread operator
+
+ //printing keys of an object
+
+ // object.keys(object_name)
+ //object.values(object_name) => now its converted to array and we can perform different operation on it
+
+ //if we want to access the object all element in form of keys value pairs then we use "entries method"
+
+ //object.entries(object_name) //every pair is now array
+
+ //want to access a specific value so we have to check whether it exist or not then 
+
+ //object_name.hasOwnProperty(property(name))
+
+ 
 
 
