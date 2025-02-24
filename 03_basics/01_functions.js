@@ -6,7 +6,7 @@ function addition(num1 ,num2) // num1 and num2 are parameters
 // addition(3, 6) 
 //3 and 6 are here arguments
 
-//storing function value in variable
+//storing function value in variable but the function must have return value
 
 var addition =  addition(2,5);
 console.log(addition) //give undefined because function does not return any value
@@ -63,3 +63,22 @@ function returnArrayVal(getArr){
 }
 
 console.log(returnArrayVal(myArr))
+
+
+//********************************/
+//function summary
+// function() => Excecution
+//function => reference
+
+//parameters
+
+//arguments
+
+//return value exist then can store that in another varuable
+
+// parameter given but not define => undefined not null
+
+//to avoid the undefined parameter case just pass the default parameter function(name="me")so if the name or parameter is defined like pass then the default parameter value will override
+
+//we can verify this through condition like name===undefined then enter name please
+
