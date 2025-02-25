@@ -1,4 +1,8 @@
 //variables
+
+//scope story begin with {let,var and const}
+
+
 let number = 10
 var age = 23
 const password = 234
@@ -60,3 +64,26 @@ const addTwo = function(num)
 
     return num+2
 }
+
+
+//***********************************/
+// three type of variable
+
+//let , var , const
+
+//let and var are same
+
+//then why they both are introduced if functionalities are same
+
+//the problem occure in scope =>{} is this scope
+
+//there is scope problem in var which means it is accessbile outside the scope as well
+
+//{} => block/local scope => not available outside the braces
+
+// { } outside => global scope => available inside and outside the braces as well
+
+//in browser and in node environment the global scope is different
+
+
+
