@@ -82,3 +82,11 @@ console.log(returnArrayVal(myArr))
 
 //we can verify this through condition like name===undefined then enter name please
 
+//when we don't know about the exact number of parameters in function  => rest operator 
+
+// syntax => ...parameter name => now it will accept all the parameter by default
+
+//we can pass array, object etc to a function as parameter
+
+
+
