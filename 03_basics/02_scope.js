@@ -86,4 +86,13 @@ const addTwo = function(num)
 //in browser and in node environment the global scope is different
 
 
+//closures => DOM => how to manupulate the the HTML page throught DOM
+
+//if we just declare the function and its not expression(didn't hold its value in another variable then we can call it before the function defination)
+
+//if the function is expression (hold its value in another variable) then can not call that defore the function defination  (will throw error)  => hoisting
+
+
+
+
 
