@@ -49,3 +49,22 @@
 //web API's (setTimeout, fetch, DOM events)
 //calback queue (to go back to the position)
 
+//functional excecution context
+
+//eval execution context
+
+//in js code in run into two phases
+
+// 1. memory creation phase (memory allocation for  variables and its value would be undefined at that stage not operation on them executed like add, sub etc) in case of function the name of the function is store and instead of undefined the defination of that function (all body ) goes in it
+
+// 2. execution pahse => here the real value is assigned as the user assign to that variable
+
+//for function
+
+//new execution context come into existence =>that contain 1.new variable environment 2.execution thread  now again two functions will be repeated 1. memory creation 2. execution
+
+//stack => LIFO 
+
+
+
+
