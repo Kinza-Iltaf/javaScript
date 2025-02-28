@@ -41,3 +41,11 @@
 
 //because it has only one call stack => one task at a time => order => top to bottom
 
+//problem => no async feature =>  we have loop that take 5 mints so js will stop there without excecution of next line so all task will block till 5 mints => generate blocking threat
+
+//solution => async feature + event loop
+
+// call stack (tasks run synchronously way)
+//web API's (setTimeout, fetch, DOM events)
+//calback queue (to go back to the position)
+
