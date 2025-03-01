@@ -24,6 +24,6 @@ if(score >5) console.log(`Pass. Your score is  ${score}`);
 
 //multiple conditions if_else 
 
-//&& (and)  || (or) pipe sign
+//&& (and)  || (or) pipe sign  (logical operators)
 
 
