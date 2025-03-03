@@ -20,5 +20,41 @@ for (let i = 0; i <=10; i++) {
       
 }
 
+//loop through array
+
+const Numbers = [ 2,6,365,24,52,25]
+//console.log(`Even Numbers are:`);
+
+for (let n = 0; n < Numbers.length; n++) {
+   if(Numbers[n]%2==0){
+      //console.log(`${Numbers[n]}`);
+      
+   }
+   
+}
+
+//sometimes we don't want to run the loop till last of the value and we want to stop it on the basis of some condition
+
+//for this we use two key words
+
+//break and continue
+
+for (let index = 1; index <= 20; index++) {
+
+   if(index==5){
+      //console.log("5 Detected");
+     
+      break;
+   }
+  
+  //console.log(`Values : ${index}`);
+  
+   
+}
+
+//continue keyword only skip the current iteration but does not break the loop
+
+
+
 
 
