@@ -1,35 +1,21 @@
-//for each loop does not return any value
+//reduce method
 
-//filter return values as well
+//take all element  of an array and combine them as one
 
-//filter => take call back just like forEach
+//parameters => accumulator , current , initial
 
-//it return value on the basis of some condition when that meets
+const prices = [34,63,62,25,62,634]
 
-const score  =[3,5,6,1,6,3]
-const result = score.filter( (num) => num%2==0) //will check the condition that is just like a filter for return values
+const result = prices.reduce(function(acc, cur){
+   // console.log(`accumulater ${acc}, current ${cur}`)
 
-//if we use {} then we should write return keyword before condition => {return num%2==0}
-
+    return acc+cur
+}, 1)
 
 //console.log(result);
 
 
-//the above thing through forEach loop
-
-const newArr = []
-
-score.forEach( (item) => {
-    if(item % 2 == 0){
-        newArr.push(item)
-    }
-})
-
-//console.log(newArr)
-
-//retuired a lot of code but we can achieve things in this way as well
-
-//practice filter
+//practice reduce
 
 const book = [
     {
@@ -80,12 +66,7 @@ const book = [
     
   ]
 
-  const thrillBooks = book.filter( (bk) => bk.genre === "Self-Help")
+  const totalPrice = book.reduce( (acc,cur) => (acc+cur.price),0)
 
-  //console.log(thrillBooks);
-
-  const price = book.filter( (bk) => {
-    return bk.price <19 
-  })
-  //console.log(price)
+  console.log(totalPrice);
   
