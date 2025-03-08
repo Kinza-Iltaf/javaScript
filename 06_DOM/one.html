@@ -17,6 +17,25 @@ we can style any element as well by getElementById => const title = documnet.get
 
 title.style.background = 'green'
 
+.textContent => for all the content in that element (display all content whether it is hide and display but whole content will be show )
+
+.innerText => display all the content that is visible on the screen for example if we use display => none then that specific element content will not be shown through this property
+
+but will be display through the textContent property
+
+innerHTML gives us all the html tag in the content as well which are avoided by the above two
+
+querySelector => gives us that specific querry
+
+document.querySelector('h1') > return first h1 element of the page
+
+querrySelectorAll => for all those elements in page
+
+for id => #idname 
+for class => .className
+
+
+
 
 -->
 
@@ -36,10 +55,16 @@ title.style.background = 'green'
 </head>
 <body class="bg-black">
     <div >
-        <h1 id="title" class="heading">DOM Learning</h1>
+        <h1 id="title"  class="heading">DOM Learning <span style="display: none;"> at youtube  </span></h1>
         
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, sit ipsum fugiat adipisci corrupti dolorum mollitia voluptas. Quisquam odio nulla laborum nesciunt eius, veniam facilis maxime. Nam laudantium hic corporis.
         </p>
+        <h2>Lorem ipsum dolor sit</h2>
+        <h2>Lorem ipsum dolor sit</h2>
+        <h2>Lorem ipsum dolor sit</h2>
+        <h2>Lorem ipsum dolor sit</h2>
+
     </div>
+    <h2>Lorem ipsum dolor sit</h2>
 </body>
 </html>
