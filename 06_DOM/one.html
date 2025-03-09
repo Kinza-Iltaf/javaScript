@@ -34,6 +34,15 @@ querrySelectorAll => for all those elements in page
 for id => #idname 
 for class => .className
 
+we can manipulate the text as well through innerText = " new text"
+
+if we have more than one elements like li are three so by querrySelector we can change only first one but what about the rest
+
+so fo this we have to use indexing like
+
+const content = document.querrySelector('li')
+content[1].style.backgroundColor = 'green'
+
 
 
 
@@ -57,14 +66,21 @@ for class => .className
     <div >
         <h1 id="title"  class="heading">DOM Learning <span style="display: none;"> at youtube  </span></h1>
         
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, sit ipsum fugiat adipisci corrupti dolorum mollitia voluptas. Quisquam odio nulla laborum nesciunt eius, veniam facilis maxime. Nam laudantium hic corporis.
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
         <h2>Lorem ipsum dolor sit</h2>
         <h2>Lorem ipsum dolor sit</h2>
         <h2>Lorem ipsum dolor sit</h2>
         <h2>Lorem ipsum dolor sit</h2>
-
+      
     </div>
+
     <h2>Lorem ipsum dolor sit</h2>
+<ul>
+    <li>one</li>
+    <li>two</li>
+    <li>three</li>
+</ul>
+    
 </body>
 </html>
