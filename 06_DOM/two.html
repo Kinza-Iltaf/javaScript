@@ -1,3 +1,4 @@
+<!-- if we select the parent element then by .children command we can get its children and as it return the html collection so through indexing we can get specific child of it as well -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +14,49 @@
         <div class="day">wednesday</div>
         <div class="day">Thursday</div>
         <div class="day">Friday</div>
+        <div class="day">saturday</div>
     </div>
     
+    <script>
+        const parent = document.querySelector('.parent')
+       // console.log(parent);
+
+        // console.log(parent.children);
+
+        // console.log(parent.children[3]);
+        // console.log(parent.children[3].innerHTML);
+
+        // console.log(parent.children[2].innerText);
+        
+        // for (let i = 0; i < parent.children.length; i++) {
+        //   console.log(parent.children[i].innerText);
+    
+            
+        // }
+
+        // parent.children[3].style.backgroundColor = "green";
+
+        // parent.children[3].style.color = "red";
+
+        //console.log(parent.firstElementChild);
+
+       // console.log(parent.lastElementChild);
+
+       const child = document.querySelector('.day')
+
+    //    console.log(child)
+
+    // console.log(child.parentElement)
+
+    // console.log(child.nextElementSibling)
+
+    console.log("Nodes: ", parent.childNodes);
+        
+        
+        
+
+
+        
+    </script>
 </body>
 </html>
