@@ -12,6 +12,16 @@ to setAttribute => take values in form of key value pair
 
 document.setAttribute('title','DOM')
 
+set attribut => directly override
+
+innerText => first retrieve the content and then overwrite 
+
+so in setAttribute one round is saved which work effeciently
+
+adding element to the body by script
+
+
+
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -34,6 +44,10 @@ document.setAttribute('title','DOM')
         div.style.backgroundColor = "green"
 
         div.style.padding = "30px";
+
+        const addText = document.createTextNode("DOM learning")
+        div.appendChild(addText);
+        document.body.appendChild(div)
         
     </script>
 </body>
