@@ -28,6 +28,16 @@
     }
 
     listItem("C++");
+function addingElement2(langName){
+    const element2 = document.createElement('li');
+    element2.innerHTML = `${langName}`;
+
+    document.querySelector('.languages').appendChild(element2);
+}
+addingElement2("Rubby");
+
+//here there is traversing issue when there are number of elements bcz each time the whole tree will be traverse and the element will be added at the end of the list/tree whatever
+//optimization problem
 
     // same above task but in optimize way
 
@@ -37,5 +47,42 @@
         document.querySelector('.languages').appendChild(element)
     }
     optimize("Python")
+
+    //second example
+
+    function optimize2(langName){
+        const element = document.createElement('li');
+        element.appendChild(document.createTextNode(langName));
+        document.querySelector('.languages').appendChild(element);
+    }
+    optimize2('GoLang');
+
+    //Editing the values in the element
+
+    const oldOne = document.querySelector('li:nth-child(1)');
+    const newOne = document.createElement('li');
+    newOne.textContent = 'C#';
+   
+    oldOne.replaceWith(newOne);
+
+    //second example
+
+    const old = document.querySelector('li:nth-child(3)');
+
+    const neew = document.createElement('li');
+
+    neew.textContent = "CSS";
+    old.replaceWith(neew)
+
+    //third
+
+    const newWay = document.querySelector('li:nth-child(4)');
+
+    newWay.outerHTML = '<li>HTML</li>';
+
+    //remove
+
+    const removeElement = document.querySelector('li:nth-child(4)')
+    removeElement.remove();
 </script>
 </html>
