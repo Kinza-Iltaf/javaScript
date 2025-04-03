@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM summary</title>
 </head>
-<body>
+<body style="background-color: #212121; color : #fff;">
 
     <!-- DOM Learning summary
 DOM => way to interact with webpage and manipulate it dynamically
@@ -33,12 +33,46 @@ querrySelectorAll => we need to define index for any specific functionality
 
 node list and html collection are not completely Array so it is not offering complete array functionalities like forEach, map etc so we need to convert it into array for which => Array.from(collectionName)
 
+selecting parent element => querySelector => (name of parent class)
+
+when we need children of parent class => parentClassName.children
+
+also get innerHTML, innerText or textContent
+
+for first child => firstElementChild
+
+for last child => lastElementChild
+
+from child to parent instead of using querySelector that will traverse the whole tree => childName.parent 
+
+switching to sibling element => childName.nextElementSibling
+
+getting know about nodes (means its childrent, line break, bold etc ) => parentClassName.childNodes
 
 
 
 
 
  -->
+
+ <div class="boss">
+    <div class="worker">worker 1</div>
+    <div class="worker">worker 2</div>
+    <div class="worker">worker 3</div>
+    <div class="worker">worker 4</div>
+ </div>
+ 
+ 
+ <script>
+    const name = document.querySelector('.boss')
+    console.log(name);
+    console.log(name.children)
+    console.log(name.children[1])
+    console.log(name.children[1].innerHTML)
+    console.log(name.children[1].textContent)
     
+
+    
+ </script>
 </body>
 </html>
