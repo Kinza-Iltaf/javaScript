@@ -49,6 +49,50 @@ switching to sibling element => childName.nextElementSibling
 
 getting know about nodes (means its childrent, line break, bold etc ) => parentClassName.childNodes
 
+creating element => creatElement
+setting element attributes (id or class names)  => 
+
+const settingAttributes = document.createElement('h1');
+settingAttributes.className = "className";   => same for id
+
+but all these ways override like first they are find that element through out the page then its address and will override that content  (innerHTML etc)
+
+lets use more optimize way
+
+const optimizeWayOfAddingText = document.createTextNode("DOM learning")
+
+settingAttributes.appendChild('optimizeWayOfAddingText ')
+
+document.body.appendChild('settingAttributes')
+
+Existing addition  (adding new li)
+
+1. creation => document.creatElement('li')
+2. inner text => innerHTML = inner text
+3. where to add => document.querySelector(parent name)
+4. append child with parent => parent.appendChild(childName)
+
+
+Editing
+
+1. selection => querySelector(element:numberth of child(number(2,4,5)))
+
+2. create new element (that you want to edit and add instead of existing element) => createElement (element(li,h2))
+
+3. new content = newElement.textContent = new content
+
+4. oldOne.replaceWith(newOne)
+
+another method 
+
+1. old one select
+2. oldOne.outerHTML = html tag with content
+
+remove
+
+1. selection
+2.oldOne.remove()
+
 
 
 
