@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+<body>
+    <body style="background-color: #414141; color: aliceblue;">
+        <h2>Amazing image</h2>
+        <div >
+            <ul id="images">
+
+                <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+
+                <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+
+
+                <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+
+
+                <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""  ></li>
+
+
+                <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+
+
+                <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+            </ul>
+       </div> 
+       <script>
+
+//  Second way
+
+        // document.getElementById('owl').onclick = function(){
+        //     alert("OWl Clicked");
+        // }  just give onClick functionalities not any extra info about events 
+
+
+        //third way
+
+        //**** EventListner (can listen many events like keyboard , mouse, drop and drag etc ) very powerful
+
+        // document.getElementById('owl').addEventListener('click', function(){
+        //     alert('owl clicked again');
+        // })
+
+        //it has also third parameter that is false by default
+
+        //event propagation
+        //1. event bubbling 
+        //2. event capture
+
+        document.getElementById('images').addEventListener('click', function(e){
+            console.log("parent Clicked");
+        },false)
+
+         document.getElementById('owl').addEventListener('click', function(e){
+            console.log("child Clicked");
+            e.stopPropagation();
+        })
+
+
+        //to stop bubbling
+
+        //e.stopPropagation
+
+        //if we want to stop the event then we use preventDefault()
+
+        document.getElementById('google').addEventListener('click', function(e){
+            console.log("Google Clicked");
+            e.preventDefault();
+            e.stopPropagation();
+        })
+
+
+      
+
+
+
+
+       </script>
+</body>
+
+
+</html>
+
+<!-- notes
+Events are run sequencial in javaScript
+
+can be injected in html but not good approach
+
+
+-->
