@@ -51,14 +51,14 @@
         //1. event bubbling 
         //2. event capture
 
-        document.getElementById('images').addEventListener('click', function(e){
-            console.log("parent Clicked");
-        },false)
+        // document.getElementById('images').addEventListener('click', function(e){
+        //     console.log("parent Clicked");
+        // },false)
 
-         document.getElementById('owl').addEventListener('click', function(e){
-            console.log("child Clicked");
-            e.stopPropagation();
-        })
+        //  document.getElementById('owl').addEventListener('click', function(e){
+        //     console.log("child Clicked");
+        //     e.stopPropagation();
+        // })
 
 
         //to stop bubbling
@@ -67,10 +67,33 @@
 
         //if we want to stop the event then we use preventDefault()
 
-        document.getElementById('google').addEventListener('click', function(e){
-            console.log("Google Clicked");
-            e.preventDefault();
-            e.stopPropagation();
+        // document.getElementById('google').addEventListener('click', function(e){
+        //     console.log("Google Clicked");
+        //     e.preventDefault();
+        //     e.stopPropagation();
+        // })
+
+        //Goal
+        //removing element when we click on it
+
+        document.querySelector("#images").addEventListener('click', function(e){
+
+            if(e.target.tagName === "IMG"){
+                console.log(e.target.tagName)
+                let removeIt = e.target.parentNode
+                 removeIt.remove();
+            }
+            // console.log(e.target.parentNode)
+            // let removeIt = e.target.parentNode
+            // removeIt.remove();
+
+            //second way of removing
+
+            // removeIt.parentNode.removeChild(removeIt)
+
+            //it remove the whole list when we click on list side dot
+
+
         })
 
 
