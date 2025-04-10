@@ -1,0 +1,41 @@
+<!-- 
+js is synchronous language
+one by one execution
+
+single threaded language : slow language but not mostly available alone js engine, it come with run time environment (browser, node.js)
+
+the above was about default js
+
+Execution context => 
+
+execution line by line (first line then second, can not jump to new without finishing the old one)
+
+two type of code
+
+1. blocking code => block the flow of the code(meeting k doran manager ko call aagy so on k wapis aanay tak hum agay proceed nahy kaar saktain)
+
+2. non blocking code => not block the execution till its availability we can do something else(ami kana bana rahy hain to es duration main hum kuch or kar saktain hain)
+
+file reading is nightmare in OS => bcz its done by kernal 
+
+non blocking code and blocking code depend upon use cases
+
+task queue make the js fast and asynch 
+
+web API => browser => DOM support
+
+promises / high priority queue
+
+machanism which remind us about pending task => web APIs => setTimeOut (baqy kam karo or time honay k bad main aap ko yad dela do gha)
+
+new API added to JS => fetch API => give Promises (tell about task whether its successful or not) (es main b task queue ke tarah call back hotain hain) 
+
+its little bit of high priority
+
+
+
+
+
+
+
+-->
