@@ -11,9 +11,39 @@
     
 </body>
 <script>
-    setTimeout(function(){
-        console.log("Kinza's Here!")
-    },2000) // its method but  also call the API. they are not core function we get them through browser
+//setTimeOut function is not core function, basically they are out of the browser ad then come inside through events
+
+//handler : function jes ka name na ho
+
+//reference (only function name)
+//excecute (function with paranthesis) use in setTimeout
+
+
+
+    // setTimeout(function(){
+    //     console.log("Kinza's Here!")
+    // },2000) 
+    // its method but  also call the API. they are not core function we get them through browser
+
+//to setTimeout ka matlab hain k mujy etna time do or os k bad jo tum bolo ghy wo main kar do gha
+
+//setInterval => repeat that thing after that interval 
+
+const Greeting = function(){
+    console.log("Welcome to JS ")
+}
+
+setTimeout(Greeting,2000)
+
+document.querySelector('#stop').addEventListener('click',function(){
+    clearTimeout(Greeting)
+console.log("Stopped")
+})
+const changeText = function(){
+document.querySelector("h1").innerHTML = "Main ho batameez hi hi la la"
+}
+
+setTimeout(changeText,2000)
 
 
 </script>
