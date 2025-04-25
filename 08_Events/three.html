@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asych Concept in js</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <h1>Asych in JS Part:2</h1>
+    <button id="stop">STOP</button>
+    <button id="start">Start</button>
+    
+</body>
+<script>
+
+//Starting and stopping event by buttons :
+    let stopIt ; 
+ const date = function(str){
+    console.log("Date Is:", Date.now());
+}
+
+document.querySelector("#start").addEventListener('click',function(){
+
+     stopIt = setInterval(date,1000) //it can take three parameter, the third one parameter is variable to pass it to the function
+    console.log("Start the event!");
+})
+
+
+document.querySelector('#stop').addEventListener('click',function(){
+    clearInterval(stopIt);
+    console.log("Event is stopped!");
+})
+
+// clearInterval(stopInterval);
+</script>
+</html>
