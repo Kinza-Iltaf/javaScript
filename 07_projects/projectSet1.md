@@ -36,7 +36,6 @@ buttons.forEach(function (button) {
 # project 2
 
 ```
-```
 //generate random colors
 
 const RandomColor = function () {
@@ -71,3 +70,5 @@ const startChangingColor = function () {
 document.getElementById('start').addEventListener('click', startChangingColor);
 
 document.getElementById('stop').addEventListener('click', stopChangingColor);
+```
+
