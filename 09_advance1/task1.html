@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Task One</title>
+
+    <style>
+        .card{
+            background-color: #574b4b;
+            height: 350px;
+            width: 550px;
+            margin-left: 400px;
+            margin-top: 100px;
+
+            display: flex; 
+            padding-top: 30px;
+            justify-content: center;
+        }
+
+        #card-img{
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            
+           
+        }
+
+        .card{
+            color: white;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card" id="card">
+        <img id="card-img" src="" alt="profile Pic"> <br>
+        <p id="name"></p>
+        <p id="followers"></p>
+        <p id="repos"></p>
+        <p id="location"></p>
+
+    </div>
+    
+    <script>
+
+        const setting = document.getElementById('card-img');
+        setting.setAttribute('src','https://avatars.githubusercontent.com/u/11613311?v=4')
+
+        const name = document.getElementById('name')
+        const Location = document.getElementById('location')
+        const repos = document.getElementById('repos')
+        const followers = document.getElementById('followers')
+
+
+        const URL = "https://api.github.com/users/hiteshchoudhary";
+
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET',URL);
+        xhr.onreadystatechange = function(){
+            if(xhr.readyState==4){
+                const data = JSON.parse(this.responseText)
+
+                 setting.setAttribute('src',data.avatar_url)
+
+                name.textContent = "Name: " + data.name;
+
+                followers.textContent = "Followers: " + data.followers;
+
+                repos.textContent = "Repositories : " + data.public_repos;
+
+                Location.textContent = "Location : " + data.location;
+            }
+        }
+
+        xhr.send();
+
+
+    </script>
+</body>
+</html>
