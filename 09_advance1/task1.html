@@ -7,21 +7,27 @@
 
     <style>
         .card{
-            background-color: #574b4b;
-            height: 350px;
-            width: 550px;
-            margin-left: 400px;
+            background-color: #161616;
+            height: 400px;
+            width: 500px;
+            margin-left: 350px;
             margin-top: 100px;
 
             display: flex; 
             padding-top: 30px;
             justify-content: center;
+
+             flex-direction: column; /* FIX: stack content vertically */
+    align-items: center;     /* Center horizontally */
+
+    border: 3px solid #F68D0C;
         }
 
         #card-img{
             height: 150px;
             width: 150px;
             border-radius: 50%;
+            border: 2px solid #F68D0C;
             
            
         }
@@ -30,16 +36,33 @@
             color: white;
             font-weight: bolder;
         }
+
+        #viewProfile{
+            background-color:  #F68D0C;
+            border : 2px solid whitesmoke;
+            border-radius : 2px;
+            padding:5px;
+            color:white;
+        }
+
+         #viewProfile:hover{
+            background-color:#161616;
+            border: 2px solid #F68D0C;;
+         }
     </style>
 </head>
-<body>
+<body style="background-color: #161616;">
 
     <div class="card" id="card">
-        <img id="card-img" src="" alt="profile Pic"> <br>
+        <div class="card-img">
+        <img id="card-img" src="" alt="profile Pic"> 
+        </div>
         <p id="name"></p>
         <p id="followers"></p>
         <p id="repos"></p>
         <p id="location"></p>
+
+        <button  id="viewProfile" type="submit">View Profile</button>
 
     </div>
     
@@ -52,6 +75,7 @@
         const Location = document.getElementById('location')
         const repos = document.getElementById('repos')
         const followers = document.getElementById('followers')
+        const view_profile = document.getElementById('viewProfile');
 
 
         const URL = "https://api.github.com/users/hiteshchoudhary";
@@ -71,6 +95,10 @@
                 repos.textContent = "Repositories : " + data.public_repos;
 
                 Location.textContent = "Location : " + data.location;
+
+                view_profile.addEventListener('click', () => {
+                    window.open(data.html_url,'_blank');
+                })
             }
         }
 
