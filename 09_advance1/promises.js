@@ -110,3 +110,20 @@ fetch('https://jsonplaceholder.typicode.com/users').then((response) => {
 }).then((data) =>{
     console.log(data)
 }).catch((error) => console.log(error))
+
+//fetch queue: micro fast queue or it is also called priority queue as well.
+
+// fetch call => two tasks performed.
+//1. data (memory taking) => 1. on fulfilled (promise resolve) 2. on rejected (promise reject)
+
+// browser => network request => 1. accept 2. reject 
+
+// network error (404 etc) request jany k bad he aarahy hotain hain so that is also store in onfulfilled
+
+
+//when we create any variable to hold the fetch response then it is filled by data that is fulfilled by on-filled or on-reject then the declared variable for taking fetch data is filled by data it is data responsibility
+
+
+
+
+
