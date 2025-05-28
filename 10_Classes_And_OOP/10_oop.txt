@@ -1,0 +1,15 @@
+javascript is prototype based language.
+
+object oriented programming : programing style
+
+parts
+. Encapsulation : Hiding the details and protecting the data.
+
+
+. Polymorphism : Different classes can have methods with the same name but different behaviors.
+
+
+. Inheritance : Getting traits from a parent.
+
+
+. Abstraction : Only showing what's important.
