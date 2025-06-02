@@ -1,0 +1,51 @@
+<!-- // variable declare inside the function are not available outside that function
+
+
+//we have two function 
+
+//inner and outer 
+
+//inner function has the access to outer function variable
+
+function user(){
+    username = "Adam"
+
+    function marks(){
+        console.log(`${username} pass the exam`)
+        let secret = "kinza123"
+    }
+
+    marks();
+
+   // console.log(secret) outer not use inner and inner also can not use inner, only inner can use outer
+} -->
+
+<!-- console.log(user()) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>closure</title>
+</head>
+<body>
+   <button id="orange">orange</button>
+   <button id="green">green</button>
+</body>
+
+<script>
+
+    function clickHandler (color){
+
+        return function(){ 
+            document.body.style.backgroundColor = `${color}`;
+        }
+
+    }
+
+    document.getElementById('orange').onclick = clickHandler('black')
+
+     document.getElementById('green').onclick = clickHandler('pink')
+</script>
+</html>
